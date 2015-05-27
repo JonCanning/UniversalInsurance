@@ -39,7 +39,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Audi.cs" />
     <Compile Include="Car.cs" />
+    <Compile Include="Mercedes.cs" />
     <Compile Include="RatingCalculator.cs" />
     <Compile Include="Manufacturer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1,11 +1,12 @@
 ﻿namespace UniversalInsurance.RatingEngine
 {
-    public abstract class VehicleType
+  public abstract class VehicleType
+  {
+    public decimal BasePremium { get; private set; }
+
+    protected VehicleType(decimal basePremium)
     {
-        protected VehicleType(decimal basePremium)
-        {
-            BasePremium = basePremium;
-        }
-        public decimal BasePremium { get; private set; }
+      BasePremium = basePremium;
     }
+  }
 }

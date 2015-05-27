@@ -1,8 +1,12 @@
 ﻿namespace UniversalInsurance.RatingEngine
 {
-    public class Manufacturer
+  public abstract class Manufacturer
+  {
+    protected Manufacturer(decimal factor)
     {
-        public string Name { get; set; }
-        public decimal Factor { get; set; }
+      Factor = factor;
     }
+
+    public decimal Factor { get; private set; }
+  }
 }

@@ -1,10 +1,10 @@
 ﻿namespace UniversalInsurance.RatingEngine
 {
-    public class RatingCalculator
+  public static class RatingCalculator
+  {
+    public static decimal CalculatePremium(Vehicle vehicle)
     {
-        public decimal CalculatePremium(Vehicle vehicle)
-        {
-            return vehicle.Manufacturer.Factor * vehicle.Type.BasePremium;
-        }
+      return vehicle.Manufacturer.Factor*vehicle.VehicleType.BasePremium;
     }
+  }
 }
